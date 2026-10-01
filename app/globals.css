@@ -1,0 +1,68 @@
+@import "tailwindcss";
+@import "tw-shimmer";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  /* --shadow: rgba(0, 0 ,0 , 0.075); */
+
+  --footer-foreground: var(--background);
+  --footer-background: var(--foreground);
+
+  --primary-darkest: var(--color-orange-900);
+  --primary-darker: var(--color-orange-800);
+  --primary-dark: var(--color-orange-700);
+  --primary-medium: var(--color-orange-600);
+  --primary: var(--color-orange-500);
+  --primary-subtle: var(--color-primary-lighter);
+  --primary-light: var(--color-orange-400);
+  --primary-lighter: var(--color-orange-300);
+  --primary-lightest: var(--color-orange-200);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-footer-foreground: var(--footer-foreground);
+  --color-footer-background: var(--footer-background);
+  
+  --color-primary-darkest: var(--primary-darkest);
+  --color-primary-darker: var(--primary-darker);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-medium: var(--primary-medium);
+  --color-primary: var(--primary);
+  --color-primary-subtle: var(--primary-subtle);
+  --color-primary-light: var(--primary-light);
+  --color-primary-lighter: var(--primary-lighter);
+  --color-primary-lightest: var(--primary-lightest);
+
+  --font-inter: var(--font-inter);
+
+  --animate-marquee: marquee 5s linear infinite;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #171717;
+    --foreground: #ededed;
+    
+    --footer-foreground: var(--foreground);
+    --footer-background: var(--color-black);
+
+    --primary-subtle: var(--color-primary-darker);
+  }
+}
+
+body {
+  font-family: var(--font-inter), sans-serif;
+}
