@@ -115,8 +115,8 @@ export default function Home() {
               </h3>
               <div className="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-1">
                 <ToolCard icon={ SiSpringboot } tool={ "Spring Boot" } />
-                <ToolCard icon={ SiSpringsecurity } tool={ "Spring Security" } />
-                <ToolCard icon={ SiSpring } tool={ "Spring Framework" } />
+                {/* <ToolCard icon={ SiSpringsecurity } tool={ "Spring Security" } />
+                <ToolCard icon={ SiSpring } tool={ "Spring Framework" } /> */}
                 <ToolCard icon={ SiThymeleaf } tool={ "Thymeleaf" } />
                 <ToolCard icon={ SiFastapi } tool={ "FastAPI" } />
                 <ToolCard icon={ SiNodedotjs } tool={ "Node.js" } />
